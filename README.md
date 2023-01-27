@@ -10,8 +10,6 @@ _A web application: Users are prompted to build a pizza with their toppings of c
 
 * JavaScript
 * HTML / CSS
-* Bootstrap
-* Git
 
 ## Github Pages Site
 
@@ -25,8 +23,6 @@ _A web application: Users are prompted to build a pizza with their toppings of c
 
 ## Tests
 ```
-Describe Pizza()
-
 Describe: Pizza()
 
 Test: "It should return a Pizza object with two properties for toppings and size"
