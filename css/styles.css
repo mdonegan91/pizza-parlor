@@ -13,12 +13,12 @@ body {
 #order {
     text-align: center;
     margin: 15px;
-    background-color: peru;
+    background-color: burlywood;
     padding: 20px;
 }
 
 .floating {
     position: absolute;
     top: 300px;
-    right: 100px;
+    right: 1px;
 }
