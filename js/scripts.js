@@ -49,11 +49,15 @@ function handleOrder(event) {
     let costOf = pizzaOrder.pizzaCost()
     document.querySelector("div#receipt").removeAttribute("class", "hidden");
     document.querySelector("span#total").innerText = ("$" + costOf);
+    document.getElementById("submit").disabled = true;
+    document.getElementById("reset").disabled = true;
 };
 
 function clearOrder(event) {
     document.querySelector("button.delete").removeAttribute("id");
     document.querySelector("div#receipt").setAttribute("class", "hidden");
+    document.getElementById("submit").disabled = false;
+    document.getElementById("reset").disabled = false;
 }
 
 window.addEventListener("load", function () {

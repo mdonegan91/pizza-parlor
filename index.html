@@ -24,42 +24,46 @@
                         <option value="medium">Medium</option>
                         <option value="large">Large</option>
                     </select><br><br>
-                    <p>Choose your veggies:</p>
-                        <input type="checkbox" id="green-peppers" name="veggies" value="green-peppers">
-                        <label for="green-peppers">Green Peppers</label>
-                        <input type="checkbox" id="jalapenos" name="veggies" value="jalapenos">
-                        <label for="jalapenos">Jalapeños</label>
-                        <input type="checkbox" id="pineapple" name="veggies" value="pineapple">
-                        <label for="pineapple">Pineapple</label>
-                        <input type="checkbox" id="onions" name="veggies" value="onions">
-                        <label for="onions">Onions</label>
-                        <input type="checkbox" id="mushrooms" name="veggies" value="mushrooms">
-                        <label for="mushrooms">Mushrooms</label><br><br>
+                    <form>
+                        <div class="checkboxes">
+                            <p>Choose your veggies:</p>
+                            <input type="checkbox" id="green-peppers" name="veggies" value="green-peppers">
+                            <label for="green-peppers">Green Peppers</label>
+                            <input type="checkbox" id="jalapenos" name="veggies" value="jalapenos">
+                            <label for="jalapenos">Jalapeños</label>
+                            <input type="checkbox" id="pineapple" name="veggies" value="pineapple">
+                            <label for="pineapple">Pineapple</label>
+                            <input type="checkbox" id="onions" name="veggies" value="onions">
+                            <label for="onions">Onions</label>
+                            <input type="checkbox" id="mushrooms" name="veggies" value="mushrooms">
+                            <label for="mushrooms">Mushrooms</label><br><br>
 
-                        <p>Choose your protein:</p>
-                        <input type="checkbox" id="sausage" name="proteins" value="sausage">
-                        <label for="sausage">Sausage</label>
-                        <input type="checkbox" id="pepperoni" name="proteins" value="pepperoni">
-                        <label for="pepperoni">Pepperoni</label>
-                        <input type="checkbox" id="chicken" name="proteins" value="chicken">
-                        <label for="chicken">BBQ Chicken</label>
-                        <input type="checkbox" id="veggie-sausage" name="proteins" value="veggie-sausage">
-                        <label for="veggie-sausage">Veggie Sausage</label><br><br>
-                    <div>
-                        <button type="submit">Place Order</button>
-                        <button type="reset" id="reset">Reset Toppings</button>
-                    </div>
-            </div>
-
-            <div class="col-md-6">
-                <div id="receipt" class="hidden">
-                    <h2>Order Placed!</h2>
-                    <p>Your total is: <span id="total"></span></p>
-                    <p>Come on down to pizza town to pick up your 'za!</p>
-                    <button class="btn-primary delete" type="button">New Order</button>
-                </div>
+                            <p>Choose your protein:</p>
+                            <input type="checkbox" id="sausage" name="proteins" value="sausage">
+                            <label for="sausage">Sausage</label>
+                            <input type="checkbox" id="pepperoni" name="proteins" value="pepperoni">
+                            <label for="pepperoni">Pepperoni</label>
+                            <input type="checkbox" id="chicken" name="proteins" value="chicken">
+                            <label for="chicken">BBQ Chicken</label>
+                            <input type="checkbox" id="veggie-sausage" name="proteins" value="veggie-sausage">
+                            <label for="veggie-sausage">Veggie Sausage</label><br><br>
+                            <div>
+                            </div>
+                    </form>
+                    <button type="submit" id ="submit">Place Order</button>
+                    <button type="reset" id="reset">Reset Toppings</button>
             </div>
         </div>
+
+        <div class="col-md-6">
+            <div id="receipt" class="hidden">
+                <h2>Order Placed!</h2>
+                <p>Your total is: <span id="total"></span></p>
+                <p>Come on down to pizza town to pick up your 'za!</p>
+                <button class="btn-primary delete" type="button">New Order</button>
+            </div>
+        </div>
+    </div>
     </div>
 </body>
 
