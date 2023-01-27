@@ -47,10 +47,16 @@ function handleOrder(event) {
     });
     let pizzaOrder = new Pizza(inputSize, veggies, proteins);
     let costOf = pizzaOrder.pizzaCost()
-    document.querySelector("div#receipt").removeAttribute("class");
+    document.querySelector("div#receipt").removeAttribute("class", "hidden");
     document.querySelector("span#total").innerText = ("$" + costOf);
 };
 
+function clearOrder(event) {
+    document.querySelector("button.delete").removeAttribute("id");
+    document.querySelector("div#receipt").setAttribute("class", "hidden");
+}
+
 window.addEventListener("load", function () {
     document.querySelector("form#order").addEventListener("submit", handleOrder);
+    document.querySelector("button.delete").addEventListener("click", clearOrder);
 });
