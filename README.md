@@ -25,41 +25,46 @@ _A web application: Users are prompted to build a pizza with their toppings of c
 ```
 Describe: Pizza()
 
-Test: It should return a Pizza object with two properties for toppings and size
-Code: let Pizza = new Pizza("medium", ["pepperoni", "pineapple"]);
-Expected Output: Pizza { size: "medium", toppings: ["pepperoni", "pineapple"] }
+Test: It should return a Pizza object with for size, veggies, and proteins
+Code:
+    let pizza = new Pizza("medium", "onions", ["pepperoni", "sausage"]);
+    pizza;
+Expected Output: Pizza { size: "medium", veggies: "onions", protein: ["pepperoni", "sausage"] }
 
 Describe Pizza.prototype.pizzaCost()
 
 Test: It should return the price of a small pizza.
-Code: let pizza = new Pizza("small", []);
+Code: let pizza = new Pizza("small", [], []);
       pizza.pizzaCost();
 Expected Output: 15.00
 
 Test: It should return the price of a medium pizza.
-Code: let pizza = new Pizza("medium", []);
+Code: let pizza = new Pizza("medium", [], []);
       pizza.pizzaCost();
 Expected Output: 20.00
 
 Test: It should return the price of a large pizza.
-Code: let pizza = new Pizza("large", []);
+Code: let pizza = new Pizza("large", [], []);
       pizza.pizzaCost();
 Expected Output: 25.00
 
 Test: It should increase the total cost by $.50 if onions are added.
-let pizza = new Pizza("large", ["onions"]);
+Code: 
+    let pizza = new Pizza("large", ["onions"], []);
     pizza.pizzaCost();
-Expected Outut: 20.50
+Expected Outut: 25.50
 
 Test: It should increase the total cost by $.50 for each veggie topping added
-let pizza = new Pizza("large", ["onions", "jalapenos"]);
+Code:
+    let pizza = new Pizza("large", ["onions", "jalapenos"], []);
     pizza.pizzaCost();
-Expected Outut: 21.00
+Expected Outut: 26.00
 
 Test: It should increase the total cost by $2 each protein topping added.
-let pizza = new Pizza("large", ["onions", "jalapenos", "sausage", "pepperoni"]);
-    piza.pizzaCost();
-Expected Outut: 25
+Code:
+    let pizza = new Pizza("large", ["onions", "jalapenos"], ["sausage", "pepperoni"]);
+    pizza.pizzaCost();
+Expected Outut: 30.00
 ```
 
 ## Known Bugs

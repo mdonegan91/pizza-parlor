@@ -10,9 +10,9 @@ Pizza.prototype.pizzaCost = function () {
     let totalCost = 0;
     if (this.size === "small") {
         totalCost += 15;
-    } else if (this.size = "medium") {
+    } else if (this.size === "medium") {
         totalCost += 20;
-    } else if (this.size = "large") {
+    } else if (this.size === "large") {
         totalCost += 25;
     }
 
