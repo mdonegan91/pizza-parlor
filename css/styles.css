@@ -26,7 +26,45 @@ img {
     height: auto;
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 770px) {
+=======
+#reset {
+    background-color: peru;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#submit {
+    background-color: peru;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#pizza-size {
+    background-color: peru;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 750px) {
+>>>>>>> gh-pages
     img {
         display: none;
-    }}
+    }
+}
