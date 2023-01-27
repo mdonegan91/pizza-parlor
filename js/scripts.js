@@ -25,3 +25,35 @@ Pizza.prototype.pizzaCost = function () {
     });
     return totalCost.toFixed(2);
 }
+
+// UI Logic
+function handleOrder(event) {
+    event.preventDefault();
+    const inputSize = document.getElementById("pizza-size")
+    const inputVeggies = document.querySelectorAll("input[name=veggies]:checked");
+    const inputProtein = document.querySelectorAll("input[name=protein]:checked");
+    
+    let veggieArray = Array.from(inputVeggies);
+
+    const veggies = [];
+    veggieArray.forEach(function (element) {
+        veggies.push(element.value);
+    });
+
+    let proteinArray = Array.from(inputProtein);
+
+    const protein = [];
+    proteinArray.forEach(function (element) {
+        protein.push(element.value);
+    });
+
+
+    let pizzaOrder = new Pizza(veggies, protein, inputSize);
+    let costOf = pizzaOrder.pizzaCost()
+    document.querySelector("div#receipt").removeAttribute("class");
+    document.querySelector("span#total").innerText = ("$" + costOf);
+};
+
+window.addEventListener("load", function () {
+    document.querySelector("form#order").addEventListener("submit", handleOrder);
+});
