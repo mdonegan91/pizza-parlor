@@ -13,7 +13,7 @@ _A web application: Users are prompted to build a pizza with their toppings of c
 
 ## Github Pages Site
 
-[Pizza Parlor](/mdonegan91.github.io/pizza-parlor)
+[Pizza Parlor](mdonegan91.github.io/pizza-parlor)
 
 ## Setup/Installation Requirements
 
