@@ -53,8 +53,15 @@ function handleOrder(event) {
     document.getElementById("reset").disabled = true;
 };
 
-function clearOrder(event) {
+function newOrder(event) {
     document.querySelector("button.delete").removeAttribute("id");
+    document.querySelector("div#receipt").setAttribute("class", "hidden");
+    document.getElementById("submit").disabled = false;
+    document.getElementById("reset").disabled = false;
+}
+
+function cancelOrder(event) {
+    document.querySelector("button.cancel").removeAttribute("id");
     document.querySelector("div#receipt").setAttribute("class", "hidden");
     document.getElementById("submit").disabled = false;
     document.getElementById("reset").disabled = false;
@@ -62,5 +69,6 @@ function clearOrder(event) {
 
 window.addEventListener("load", function () {
     document.querySelector("form#order").addEventListener("submit", handleOrder);
-    document.querySelector("button.delete").addEventListener("click", clearOrder);
+    document.querySelector("button.delete").addEventListener("click", newOrder);
+    document.querySelector("button.cancel").addEventListener("click", cancelOrder);
 });
