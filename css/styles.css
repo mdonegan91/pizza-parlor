@@ -1,9 +1,24 @@
+.hidden {
+    display: none;
+}
+
+.container {
+    margin-top: 50px;
+}
+
 body {
     background-color: peru;
 }
 
+#order {
+    text-align: center;
+    margin: 15px;
+    background-color: peru;
+    padding: 20px;
+}
+
 .floating {
     position: absolute;
-    bottom: 100px;
+    top: 300px;
     right: 100px;
 }
