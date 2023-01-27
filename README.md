@@ -46,20 +46,20 @@ Code: let pizza = new Pizza("large", []);
       pizza.pizzaCost();
 Expected Output: 25.00
 
-Test: It will add $0.50 to the total pizza cost when olives, onions, or pepper toppings are selected.
-Code: let pizza = new Pizza(["olives"], "small");
-      pizza.pizzaCost();
-Expected Output: 15.50
+Test: It should increase the total cost by $.50 if onions are added.
+let pizza = new Pizza("large", ["onions"]);
+    pizza.pizzaCost();
+Expected Outut: 20.50
 
-Test: It will add $1.00 to the total pizza cost when tomato or artichoke toppings are selected.
-Code: let pizza = new Pizza(["artichoke"], "medium");
-      pizza.pizzaCost();
-Expected Output: 21.00
+Test: It should increase the total cost by $.50 for each veggie topping added
+let pizza = new Pizza("large", ["onions", "jalapenos"]);
+    pizza.pizzaCost();
+Expected Outut: 21.00
 
-Test: It will add $2.00 to the total pizza cost when ham or chicken toppings are selected.
-Code: let pizza = new Pizza(["artichoke", "ham"], "medium");
-      pizza.pizzaCost();
-Expected Output: $23.00
+Test: It should increase the total cost by $2 each protein topping added.
+let pizza = new Pizza("large", ["onions", "jalapenos", "sausage", "pepperoni"]);
+    piza.pizzaCost();
+Expected Outut: 25
 ```
 
 ## Known Bugs

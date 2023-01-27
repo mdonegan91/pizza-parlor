@@ -6,15 +6,22 @@ function Pizza(size, toppings) {
 }
 
 Pizza.prototype.pizzaCost = function () {
-    let pizzaCost = 0;
+    let totalCost = 0;
     if (this.size === "small") {
-        pizzaCost += 15;
+        totalCost += 15;
+    } else if (this.size = "medium") {
+        totalCost += 20;
+    } else if (this.size = "large") {
+        totalCost += 25;
     }
-    else if (this.size = "medium") {
-        pizzaCost += 20;
-    }
-    else if (this.size = "large") {
-        pizzaCost += 20;
-    }
-    return pizzaCost;
+
+    this.toppings.forEach(function (topping) {
+        if (topping.includes("green-peppers") || topping.includes("jalapenos") || topping.includes("pineapple") || topping.includes("onions") || topping.includes("mushrooms")) {
+            totalCost += 0.50;
+        }
+        if (topping.includes("sausage") || topping.includes("pepperoni") || topping.includes("chicken") || topping.includes("veggie-sausage")) {
+            totalCost += 2;
+        }
+    });
+    return totalCost.toFixed(2);
 }
