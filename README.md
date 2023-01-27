@@ -4,7 +4,7 @@
 
 #### _Object-Oriented Javascript Independent Project_
 
-_A web application: Users are prompted to build a pizza with their toppings of choice. On submit, the total cost of the pizza is calculated using JavaScript objects and methods, and printed on the screen._
+_A web application where users are prompted to build a pizza with their toppings of choice. On submit, the total cost of the pizza is calculated using JavaScript objects and methods, and printed on the screen._
 
 ## Technologies Used
 
