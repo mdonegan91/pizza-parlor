@@ -25,9 +25,8 @@ _A web application: Users are prompted to build a pizza with their toppings of c
 ```
 Describe: Pizza()
 
-Test: It should return a Pizza object with for size, veggies, and proteins
-Code:
-    let pizza = new Pizza("medium", "onions", ["pepperoni", "sausage"]);
+Test: It should return a Pizza object with for size, veggies, and proteins.
+Code: let pizza = new Pizza("medium", "onions", ["pepperoni", "sausage"]);
     pizza;
 Expected Output: Pizza { size: "medium", veggies: "onions", protein: ["pepperoni", "sausage"] }
 
@@ -49,20 +48,17 @@ Code: let pizza = new Pizza("large", [], []);
 Expected Output: 25.00
 
 Test: It should increase the total cost by $.50 if onions are added.
-Code: 
-    let pizza = new Pizza("large", ["onions"], []);
+Code: let pizza = new Pizza("large", ["onions"], []);
     pizza.pizzaCost();
 Expected Outut: 25.50
 
-Test: It should increase the total cost by $.50 for each veggie topping added
-Code:
-    let pizza = new Pizza("large", ["onions", "jalapenos"], []);
+Test: It should increase the total cost by $.50 for each veggie topping added.
+Code: let pizza = new Pizza("large", ["onions", "jalapenos"], []);
     pizza.pizzaCost();
 Expected Outut: 26.00
 
 Test: It should increase the total cost by $2 each protein topping added.
-Code:
-    let pizza = new Pizza("large", ["onions", "jalapenos"], ["sausage", "pepperoni"]);
+Code: let pizza = new Pizza("large", ["onions", "jalapenos"], ["sausage", "pepperoni"]);
     pizza.pizzaCost();
 Expected Outut: 30.00
 ```
