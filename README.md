@@ -29,20 +29,20 @@ Test: It should return a Pizza object with two properties for toppings and size
 Code: let Pizza = new Pizza("medium", ["pepperoni", "pineapple"]);
 Expected Output: Pizza { size: "medium", toppings: ["pepperoni", "pineapple"] }
 
-<!-- Describe Pizza.prototype.pizzaCost()
+Describe Pizza.prototype.pizzaCost()
 
 Test: It should return the price of a small pizza.
-Code: let pizza = new Pizza([], "small");
+Code: let pizza = new Pizza("small", []);
       pizza.pizzaCost();
 Expected Output: 15.00
 
 Test: It should return the price of a medium pizza.
-Code: let pizza = new Pizza([], "medium");
+Code: let pizza = new Pizza("medium", []);
       pizza.pizzaCost();
 Expected Output: 20.00
 
 Test: It should return the price of a large pizza.
-Code: let pizza = new Pizza([], "large");
+Code: let pizza = new Pizza("large", []);
       pizza.pizzaCost();
 Expected Output: 25.00
 
@@ -59,7 +59,7 @@ Expected Output: 21.00
 Test: It will add $2.00 to the total pizza cost when ham or chicken toppings are selected.
 Code: let pizza = new Pizza(["artichoke", "ham"], "medium");
       pizza.pizzaCost();
-Expected Output: $23.00 -->
+Expected Output: $23.00
 ```
 
 ## Known Bugs
